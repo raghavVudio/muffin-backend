@@ -12,7 +12,6 @@ const schema = new mongoose.Schema({
   isActive:     { type: Boolean, default: true },
 }, { timestamps: true });
 
-schema.index({ email: 1 });
 schema.index({ orgId: 1 });
 
 schema.methods.toJSON = function () {
